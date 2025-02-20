@@ -1,0 +1,387 @@
+* {
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", serif;
+}
+
+body {
+    background-color:  hsl(202, 86%, 94%);
+}
+
+.container {
+    width: 900px;
+    margin: 10% auto;
+    display: grid;
+    grid-template-areas: 'information results';
+    
+}
+
+.information {
+    width: 450px;
+    padding: 5% 10%;
+    grid-area: information;
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    position: relative;
+    left: 30px;
+    
+}
+
+.information b {
+    font-size: 20px;
+}
+
+.information #clear {
+    margin-left: 18%;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.information h5 {
+    color: hsl(200, 24%, 40%);
+    
+}
+
+.information .coin {
+    border-right: none;
+}
+
+.information .age {
+    border-left: none;
+}
+
+.information .percentage {
+    border-left: none
+}
+
+.information button {
+    background-color: hsl(202, 86%, 94%);
+    padding: 7px 10px;
+    border: hsl(200, 26%, 54%) 1px solid;
+}
+
+.information #amount {
+    padding: 7px;
+    border: hsl(200, 26%, 54%) 1px solid;
+    width: 84%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.information .inter {
+    display: flex;
+    flex-direction: row;
+}
+
+.information #term {
+    padding: 7px;
+    border: hsl(200, 26%, 54%) 1px solid;
+    width: 58%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+    
+}
+
+.information .two h5 {
+    margin-left: 7%;
+}
+
+.information #rate {
+    padding: 7px;
+    border: hsl(200, 26%, 54%) 1px solid;
+    width: 58%;
+    margin-left: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+
+.information .repayment {
+    border: 1px solid black;
+    padding: 2%;
+    border: hsl(200, 26%, 54%) 1px solid;
+    width: 92.5%;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.information .interest {
+    border: 1px solid black;
+    padding: 2%;
+    border: hsl(200, 26%, 54%) 1px solid;
+    margin-top: 5px;
+    width: 92.5%;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.information .calculate {
+    margin-top: 5%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: hsl(61, 70%, 52%);
+    padding: 10px 15px;
+    display: flex;
+    cursor: pointer;
+}
+
+.information .calculate:hover {
+    background-color: greenyellow;
+}
+
+.information .calculate b {
+    font-size: 14px;
+}
+
+.information .calculate img {
+    width: 10%;
+    margin-right: 5px;
+   
+}
+
+
+.results {
+    grid-area: results;
+    text-align: center;
+    border: 1px solid black;
+    border-bottom-left-radius: 70px;
+    position: relative;
+    right: 20px;
+    background-color: hsl(202, 55%, 16%);
+    color: hsl(0, 0%, 100%);
+}
+
+.results img {
+    padding-top: 22%;
+    width: 30%;
+}
+
+.results h2 {
+    font-size: 21px;
+  
+}
+
+
+
+.results span {
+    
+    font-size: 14px;
+    color: hsl(200, 26%, 54%);
+ 
+    
+  
+}
+
+.results p {
+    font-size: 14px;
+    padding: 1px 8%;
+    
+}
+
+.results div {
+    width: 350px;
+    padding-top: 10px;
+    margin: 10px auto;
+    border-top: 3px solid hsl(61, 70%, 52%);
+    color: hsl(200, 26%, 54%);
+    text-align: justify;
+    padding-left: 5%;
+    
+   
+}
+
+.results div hr {
+    width: 95%;
+    position: relative;
+    right: 10px;
+   
+
+}
+
+.results div h1 {
+    color: hsl(61, 70%, 52%);
+
+}
+
+.results div h4 {
+    color: white;
+}
+
+
+@media screen and (max-width: 568px) {
+    .container {
+        width: 900px;
+        margin: 10% auto;
+        display: grid;
+        grid-template-areas: 'information' 
+                            'results';
+        
+    }
+    
+    .information {
+        width: 450px;
+        padding: 5% 5%;
+        grid-area: information;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+       
+        
+    }
+      
+    .information #clear {
+        display: block;
+        position: relative;
+        right: 65px;
+        top: 5px;
+    
+    }
+    
+    
+    .information button {
+        background-color: hsl(202, 86%, 94%);
+        padding: 7px 10px;
+        border: hsl(200, 26%, 54%) 1px solid;
+    }
+    
+    .information #amount {
+        width: 90%;
+       
+    }
+    
+    .information .inter {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .information #term {
+        padding: 7px;
+        border: hsl(200, 26%, 54%) 1px solid;
+        width: 82%;
+        
+        
+    }
+    .information .two h5 {
+       position: relative;
+       right: 7%;
+    }
+
+    .two .percentage {
+        position: relative;
+        right: 3%;
+    }
+    
+    .information #rate {
+        width: 87%;
+        position: relative;
+        right: 3%;
+        
+        
+    }
+    
+    .information .repayment {
+        width: 96%;
+     
+    }
+    
+    .information .interest {
+        width: 96%;
+        
+    }
+    
+    
+    .information .calculate {
+        margin-top: 7%;
+        width: 97%;
+        padding: 5px 15px;
+        display: flex;
+        cursor: pointer;
+        
+    }
+    
+ 
+    
+    .information .calculate img {
+        width: 10%;
+        margin-right: 5px;
+        margin-left: 40px;
+       
+    }
+    
+    .information .calculate b {
+        font-size: 15px;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    
+    .results {
+        width: 450px;
+        border-bottom-left-radius: 0px;
+        position: relative;
+        right: 0px;
+        left: 30px;
+    }
+    
+    .results img {
+        padding-top: 22%;
+        width: 30%;
+    }
+    
+    .results h2 {
+        font-size: 21px;
+      
+    }
+    
+    
+    
+    .results span {
+        
+        font-size: 14px;
+        color: hsl(200, 26%, 54%);
+     
+        
+      
+    }
+    
+    .results p {
+        font-size: 14px;
+        padding: 1px 8%;
+        
+    }
+    
+    .results div {
+        width: 350px;
+        padding-top: 10px;
+        margin: 10px auto;
+        border-top: 3px solid hsl(61, 70%, 52%);
+        color: hsl(200, 26%, 54%);
+        text-align: justify;
+        padding-left: 5%;
+        
+       
+    }
+    
+    .results div hr {
+        width: 95%;
+        position: relative;
+        right: 10px;
+       
+    
+    }
+    
+    .results div h1 {
+        color: hsl(61, 70%, 52%);
+    
+    }
+    
+    .results div h4 {
+        color: white;
+    }
+}
